@@ -1,24 +1,145 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* Set padding to keep content from hitting the edges */
-.body-content {
-    padding-left: 15px;
-    padding-right: 15px;
+body {
+    background-color: rgba(247, 217, 163, 1);
+    height: 100%;
+    margin: 0;
+    padding: 0;
 }
 
-/* Override the default bootstrap behavior where horizontal description lists 
-   will truncate terms that are too long to fit in the left column 
-*/
-.dl-horizontal dt {
-    white-space: normal;
+.nav {
+    background-color: #683e2e;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 80%;
 }
 
-/* Set width on the form input elements since they're 100% wide by default */
-input,
-select,
-textarea {
-    max-width: 280px;
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#seclist {
+    margin-top: -12%;
+    font-family: Verdana;
+    list-style: none;
+    padding-right: 42%;
+}
+
+li {
+    float: left;
+    text-align: center;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(241, 195, 109, 1);
+}
+
+.tryckt {
+    color: rgba(241, 195, 109, 1);
+    margin-top: 30px;
+}
+
+.otryckt {
+    color: rgba(247, 217, 163, 1);
+    margin-top: 30px;
+}
+
+img {
+    margin-top: 0px;
+    display: block;
+    max-width: 100%;
+}
+
+.problem {
+    padding: 0px;
+}
+
+article {
+    height: 100%;
+    position: relative;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    min-width: 800px;
+    max-width: 1200px;
+}
+
+footer {
+    bottom: 0px;
+    width: 100%;
+    height: 40px;
+    background: #683e2e;
+    text-align: center;
+    display: block;
+    padding-top: 20px;
+    margin-bottom: 0px;
+    clear: both;
+}
+
+h1 {
+    color: #fff;
+    font-size: 40px;
+    text-align: center;
+    padding-top: 10%;
+    margin: 0;
+}
+
+.bakgrund {
+    height: 675px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 10px;
+    background-image: url("valkommen3.jpg");
+    background-repeat: no-repeat;
+}
+
+p {
+    color: #fff;
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+.knapp {
+    width: 340px;
+    height: 70px;
+    margin-top: -140px;
+    margin-bottom: 70px;
+    float: right;
+    border: none;
+    overflow: hidden;
+}
+
+.open {
+    float: left;
+    margin-bottom: 100px;
+    font-size: 38px;
+}
+
+.oppet {
+    float: left;
+    color: black;
 }
