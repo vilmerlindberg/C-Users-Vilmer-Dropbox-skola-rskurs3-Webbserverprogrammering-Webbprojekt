@@ -20,10 +20,8 @@ namespace Webbprojekt.Controllers
             return View();
         }
 
-        public ActionResult Contact()
+        public ActionResult Restaurang()
         {
-            ViewBag.Message = "Your contact page.";
-
             return View();
         }
     }

@@ -16,14 +16,13 @@
             <li><a href="Start.html">@Html.ActionLink("Hem", "index", "Home")</a></li>
             <li><a href="Meny.html">@Html.ActionLink("Á la carte meny", "Index", "Maträtter")</a></li>
             <li><a href="Start.html" class="problem"><img src="@Url.Content("~/Content/logo.gif")" alt="bild"></a></li>
-            <li><a href="Restaurang.html" class="otryckt">Restaurang</a></li>
+            <li><a href="Restaurang.html"> @Html.ActionLink("Restaurang", "Restaurang", "Home")</a></li>
             <li><a href="Takeaway.html" class="otryckt">Take Away</a></li>
         </ul>
     </div>
 
-    <div>
+    <div class="andraDiv">
         @RenderBody()
-        <hr />
     </div>
 
     @Scripts.Render("~/bundles/jquery")
