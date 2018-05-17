@@ -13,7 +13,7 @@
 <body>
     <div class="nav">
         <ul>
-            <li><a href="Start.html">@Html.ActionLink("Home", "index", "Home")</a></li>
+            <li><a href="Start.html">@Html.ActionLink("Hem", "index", "Home")</a></li>
             <li><a href="Meny.html">@Html.ActionLink("Á la carte meny", "Index", "Maträtter")</a></li>
             <li><a href="Start.html" class="problem"><img src="@Url.Content("~/Content/logo.gif")" alt="bild"></a></li>
             <li><a href="Restaurang.html" class="otryckt">Restaurang</a></li>
@@ -21,7 +21,7 @@
         </ul>
     </div>
 
-    <div class="container body-content">
+    <div>
         @RenderBody()
         <hr />
     </div>

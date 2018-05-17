@@ -14,12 +14,10 @@
 </head>
 <body>
     <article>
-        
-        <p>
-            @Html.ActionLink("Create New", "Create")
-        </p>
+
+
         <table class="table">
-            
+
 
             @foreach (var item in Model)
         {
@@ -34,17 +32,22 @@
                     @Html.DisplayFor(modelItem => item.Description)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.Price)
+                    @Html.DisplayFor(modelItem => item.Price) :- 
                 </td>
                 <td>
-                    @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
-                    @Html.ActionLink("Details", "Details", new { id = item.ID }) |
-                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    @Html.ActionLink("Ändra", "Edit", new { id = item.ID }) |
+                    @Html.ActionLink("Detaljer", "Details", new { id = item.ID }) |
+                    @Html.ActionLink("Ta bort", "Delete", new { id = item.ID })
                 </td>
             </tr>
     }
 
         </table>
+        <div class="alert alert-dark" role="alert">
+            <p class="laggtillratt">
+                @Html.ActionLink("Lägg till rätt", "Create")
+            </p>
+        </div>
 
         <footer>
             Taste of Beirut, Barnarpsgatan 100, Jönköping - 036-12 42 23
